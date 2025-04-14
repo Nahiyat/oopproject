@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.pastryshop_2310003_2311945_2311197_23104563.LoginViewController">
+   <children>
+      <Label layoutX="243.0" layoutY="37.0" prefHeight="35.0" prefWidth="71.0" text="Login" AnchorPane.leftAnchor="270.0" AnchorPane.rightAnchor="270.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="164.0" layoutY="82.0" text="Welcome back! Please login using ID and password" />
+      <Label layoutX="189.0" layoutY="129.0" text="UserID" />
+      <Label layoutX="189.0" layoutY="198.0" text="Password" />
+      <Label layoutX="318.0" layoutY="198.0" onMouseClicked="#ForgotPasswordOnMouseClicked" text="Forgot Password?" />
+      <TextField fx:id="userIDTextField" layoutX="189.0" layoutY="146.0" prefHeight="25.0" prefWidth="223.0" />
+      <TextField fx:id="passwordTextField" layoutX="189.0" layoutY="215.0" prefHeight="25.0" prefWidth="223.0" />
+      <Button layoutX="239.0" layoutY="270.0" mnemonicParsing="false" onAction="#LoginOnAction" prefHeight="25.0" prefWidth="124.0" text="Login" />
+      <Button layoutX="239.0" layoutY="314.0" mnemonicParsing="false" onAction="#RegisterOnAction" prefHeight="25.0" prefWidth="124.0" text="Register" />
+   </children>
+</AnchorPane>
