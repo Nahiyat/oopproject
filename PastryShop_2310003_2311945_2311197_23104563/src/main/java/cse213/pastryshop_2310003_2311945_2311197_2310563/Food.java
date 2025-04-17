@@ -1,5 +1,6 @@
-package cse213.pastryshop_2310003_2311945_2311197_23104563;
+package cse213.pastryshop_2310003_2311945_2311197_2310563;
 
+import java.awt.*;
 import java.time.LocalDate;
 
 public class Food {
@@ -7,6 +8,7 @@ public class Food {
     LocalDate expiryDate;
     int stockAmount;
     float price;
+    Button addToCart= new Button();
 
     public Food(String id, String foodName, String foodType, LocalDate expiryDate, int stockAmount, float price) {
         this.id = id;
@@ -65,6 +67,7 @@ public class Food {
         this.price = price;
     }
 
+
     @Override
     public String toString() {
         return "Food{" +
@@ -76,4 +79,6 @@ public class Food {
                 ", price=" + price +
                 '}';
     }
+
+
 }

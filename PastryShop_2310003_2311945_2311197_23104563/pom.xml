@@ -58,7 +58,7 @@
             <!-- Default configuration for running with: mvn clean javafx:run -->
             <id>default-cli</id>
             <configuration>
-              <mainClass>cse213.pastryshop_2310003_2311945_2311197_23104563/cse213.pastryshop_2310003_2311945_2311197_23104563.HelloApplication</mainClass>
+              <mainClass>cse213.pastryshop_2310003_2311945_2311197_23104563/cse213.pastryshop_2310003_2311945_2311197_2310563.HelloApplication</mainClass>
               <launcher>app</launcher>
               <jlinkZipName>app</jlinkZipName>
               <jlinkImageName>app</jlinkImageName>
