@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="479.0" prefWidth="768.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.pastryshop_2310003_2311945_2311197_2310563.CashierAssessmentController">
+   <children>
+      <TableView fx:id="cashierInfoTable" layoutY="156.0" prefHeight="292.0" prefWidth="768.0">
+        <columns>
+          <TableColumn fx:id="cashierNameCol" prefWidth="97.0" text="Cashier Name" />
+          <TableColumn fx:id="cashierIDCol" prefWidth="78.0" text="Cashier ID" />
+            <TableColumn fx:id="salaryCol" prefWidth="62.0" text="Salary" />
+            <TableColumn fx:id="workDaysCol" prefWidth="89.0" text="Work Days" />
+            <TableColumn fx:id="workShiftCol" prefWidth="78.0" text="Work Shift" />
+            <TableColumn fx:id="dateOfJoiningCol" prefWidth="91.0" text="Date of joining" />
+            <TableColumn fx:id="lateArrivalCol" prefWidth="98.0" text="Late arrival" />
+            <TableColumn fx:id="absentCol" prefWidth="75.0" text="Absent" />
+            <TableColumn fx:id="phoneNumberCol" prefWidth="99.0" text="Phone Number" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

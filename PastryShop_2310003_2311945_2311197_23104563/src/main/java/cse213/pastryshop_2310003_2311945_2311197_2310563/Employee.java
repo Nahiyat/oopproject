@@ -12,6 +12,14 @@ public abstract class Employee extends User{
         this.dateOfJoining = dateOfJoining;
     }
 
+    public Employee(int id, String name, String gender, String password, LocalDate dateOfBirth) {
+        super(id, name, gender, password, dateOfBirth);
+    }
+
+    public Employee(int id, String name) {
+        super(id, name);
+    }
+
     public Employee() {
     }
 

@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
-
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.pastryshop_2310003_2311945_2311197_2310563.RegistrationViewController">
    <children>
@@ -12,5 +15,16 @@
             <Font size="24.0" />
          </font>
       </Label>
+      <TextField fx:id="nameTextField" layoutX="151.0" layoutY="106.0" />
+      <TextField fx:id="pwTextField" layoutX="151.0" layoutY="156.0" />
+      <Label layoutX="30.0" layoutY="110.0" prefHeight="17.0" prefWidth="103.0" text="Name" />
+      <Label layoutX="319.0" layoutY="160.0" prefHeight="17.0" prefWidth="103.0" text="Gender" />
+      <Label layoutX="30.0" layoutY="160.0" prefHeight="17.0" prefWidth="103.0" text="Password" />
+      <Label layoutX="319.0" layoutY="110.0" prefHeight="17.0" prefWidth="103.0" text="Date Of Birth" />
+      <DatePicker fx:id="dobDatePicker" layoutX="410.0" layoutY="106.0" />
+      <Button layoutX="278.0" layoutY="259.0" mnemonicParsing="false" onAction="#RegisterOnAction" text="Register" />
+      <Label layoutX="30.0" layoutY="208.0" text="ID" />
+      <TextField fx:id="idTextField" layoutX="151.0" layoutY="204.0" />
+      <ComboBox fx:id="genderCB" layoutX="410.0" layoutY="156.0" prefHeight="25.0" prefWidth="174.0" />
    </children>
 </AnchorPane>
