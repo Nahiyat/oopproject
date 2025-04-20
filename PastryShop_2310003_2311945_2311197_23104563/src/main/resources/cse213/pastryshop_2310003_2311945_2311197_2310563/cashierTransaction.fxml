@@ -4,13 +4,14 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane prefHeight="498.0" prefWidth="761.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.pastryshop_2310003_2311945_2311197_2310563.CashierProcessTransactionController">
     <children>
-        <Label layoutX="72.0" layoutY="49.0" text="Search Bar" />
-        <TextField fx:id="searchTextField" layoutX="164.0" layoutY="45.0" />
+        <Label layoutX="72.0" layoutY="49.0" text="Quantity" />
+        <TextField fx:id="quantityTextField" layoutX="164.0" layoutY="45.0" />
         <TableView fx:id="productTableView" layoutX="15.0" layoutY="239.0" prefHeight="200.0" prefWidth="528.0">
             <columns>
                 <TableColumn fx:id="foodNameCol" prefWidth="119.0" text="Product Name" />
@@ -20,14 +21,16 @@
             <TableColumn fx:id="addToCartCol" prefWidth="97.0" text="Add to Cart" />
             </columns>
         </TableView>
-      <Button layoutX="343.0" layoutY="45.0" mnemonicParsing="false" onAction="#SearchFoodOnAction" text="search" />
+      <Button layoutX="332.0" layoutY="45.0" mnemonicParsing="false" onAction="#AddToCartOnAction" text="AddToCart" />
       <Button layoutX="359.0" layoutY="451.0" mnemonicParsing="false" onAction="#processTransactionOnAction" prefHeight="25.0" prefWidth="184.0" text="Process Transaction" />
-      <TableView fx:id="cartTableView" layoutX="414.0" layoutY="27.0" prefHeight="200.0" prefWidth="340.0">
+      <TableView fx:id="cartTableView" layoutX="22.0" layoutY="88.0" prefHeight="139.0" prefWidth="434.0">
         <columns>
-          <TableColumn fx:id="foodInCartCol" prefWidth="75.0" text="Food name" />
-            <TableColumn fx:id="quantityInCartCol" prefWidth="75.0" text="Quantity" />
-          <TableColumn fx:id="priceInCartCol" prefWidth="75.0" text="Price" />
+          <TableColumn fx:id="foodInCartCol" prefWidth="113.0" text="Food name" />
+            <TableColumn fx:id="quantityInCartCol" text="Quantity" />
+          <TableColumn fx:id="priceInCartCol" prefWidth="89.0" text="Price" />
         </columns>
       </TableView>
+      <TextArea fx:id="totalPrice" layoutX="556.0" layoutY="39.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button layoutX="439.0" layoutY="45.0" mnemonicParsing="false" onAction="#EmptyCartOnAction" prefHeight="25.0" prefWidth="80.0" text="Empty Cart" />
     </children>
 </AnchorPane>

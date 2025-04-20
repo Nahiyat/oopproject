@@ -33,6 +33,7 @@
             <TableColumn fx:id="foodTypeCol" prefWidth="88.0" text="Food Type" />
         </columns>
       </TableView>
-      <Button layoutX="271.0" layoutY="383.0" mnemonicParsing="false" onAction="#AddFoodOnAction" text="Add Food" />
+      <Button layoutX="345.0" layoutY="383.0" mnemonicParsing="false" onAction="#AddFoodOnAction" text="Add New Food" />
+      <Button layoutX="146.0" layoutY="383.0" mnemonicParsing="false" onAction="#UpdateFoodInformation" text="Update Food Information" />
    </children>
 </AnchorPane>

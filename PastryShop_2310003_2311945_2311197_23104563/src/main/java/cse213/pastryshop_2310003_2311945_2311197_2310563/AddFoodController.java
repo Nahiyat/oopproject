@@ -114,4 +114,78 @@ public class AddFoodController
         foodTabelView.getItems().addAll(foodList);
         System.out.println(newFood.toString());
     }
+
+    @javafx.fxml.FXML
+    public void UpdateFoodInformation(ActionEvent actionEvent) {
+        File file=null;
+        FileInputStream fis;
+        ObjectInputStream ois;
+
+        FileOutputStream fos;
+        ObjectOutputStream oos;
+
+        Food x=null;
+
+        for (Food f: foodList){
+            if (foodNameTextField.getText().equals(f.getFoodName())){
+                f.setFoodType(foodTypeCB.getValue());
+                f.setStockAmount(Integer.parseInt(stockAmountTextField.getText()));
+                f.setExpiryDate(expDatePicker.getValue());
+                f.setPrice(Float.parseFloat(priceTextField.getText()));
+                x=f;
+            }
+            else{
+                return;
+            }
+        }
+
+
+        try {
+            if (file.exists()) {
+                fos = new FileOutputStream(file, true);
+                oos = new AppendableObjectOutputStream(fos);
+            } else {
+                fos = new FileOutputStream(file, true);
+                oos = new ObjectOutputStream(fos);
+            }
+
+            oos.writeObject(x);
+            oos.close();
+        } catch (Exception e) {
+            System.out.println("There was a error writing to bin file");
+        }
+        foodTabelView.getItems().clear();
+        foodList.add(x);
+        foodTabelView.getItems().addAll(foodList);
+        System.out.println(foodList.toString());
+
+
+        try {
+            file = new File("food.bin");
+            if (!file.exists()) return;
+
+            fis = new FileInputStream(file);
+            ois = new ObjectInputStream(fis);
+
+            try {
+                while (true) {
+                    Food newFood = (Food) ois.readObject();
+                    foodList.add(newFood);
+                }
+            } catch (EOFException eofException) {
+                System.out.println("End of file reached");
+
+            } catch (ClassNotFoundException e) {
+                throw new RuntimeException(e);
+            }
+
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        } catch (Exception e) {
+            System.out.println("A");
+        }
+        foodTabelView.getItems().addAll(foodList);
+    }
 }

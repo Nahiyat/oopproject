@@ -20,6 +20,10 @@ public class Food implements Serializable {
         this.price = price;
     }
 
+    public Food() {
+
+    }
+
     public String getId() {
         return id;
     }

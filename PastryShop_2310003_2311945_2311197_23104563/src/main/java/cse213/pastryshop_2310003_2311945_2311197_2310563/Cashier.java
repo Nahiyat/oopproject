@@ -1,12 +1,14 @@
 package cse213.pastryshop_2310003_2311945_2311197_2310563;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-public class Cashier extends Employee {
+public class Cashier extends Employee implements Serializable {
 
-    String workingDays;
-    String workShift;
+    String workingDays="N/A";
+    String workShift="N/A";
+
     int cashierId= super.getId();
     String cashierName= super.getName();
 
@@ -57,6 +59,5 @@ public class Cashier extends Employee {
                 ", dateOfBirth=" + dateOfBirth +
                 '}';
     }
-
 
 }

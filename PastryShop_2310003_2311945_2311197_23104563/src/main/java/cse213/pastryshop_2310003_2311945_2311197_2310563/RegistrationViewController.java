@@ -1,13 +1,11 @@
 package cse213.pastryshop_2310003_2311945_2311197_2310563;
 
 
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 
 import java.io.*;
-import java.time.LocalDate;
+
 import java.util.ArrayList;
 
 public class RegistrationViewController
@@ -22,33 +20,22 @@ public class RegistrationViewController
     private DatePicker dobDatePicker;
 
     ArrayList<Cashier> c;
-    //ObservableList<Cashier> x= new ObservableList<Cashier>();
+
 
     @javafx.fxml.FXML
     private ComboBox<String> genderCB;
 
-    /*private ObservableList<Cashier> cashierList;
-
-    public ObservableList<Cashier> getCashierList() {
-        return cashierList;
-    }
-
-    public void setCashierList(ObservableList<Cashier> cashierList) {
-        this.cashierList = cashierList;
-    }*/
-
     @javafx.fxml.FXML
     public void initialize() {
         c= new ArrayList<>();
-        //Cashier cashierList= (Cashier) FXCollections.observableArrayList();
         genderCB.getItems().addAll("Male","Female");
 
-        /*File file;
+        File file;
         FileInputStream fis;
         ObjectInputStream ois;
 
         try {
-            file = new File("student.bin");
+            file = new File("cashier.bin");
             if (!file.exists()) return;
 
             fis = new FileInputStream(file);
@@ -72,30 +59,26 @@ public class RegistrationViewController
             throw new RuntimeException(e);
         } catch (Exception e) {
 
-        }*/
+        }
     }
 
 
     @javafx.fxml.FXML
     public void RegisterOnAction(ActionEvent actionEvent) {
         //id, name, gender, password, dateOfBirth
-        float salary=1.0f;
-        LocalDate currentDate=LocalDate.now();
-        String workDays= "N/A";
-        String workShift= "N/A";
+        //float salary=1.0f;
+        //LocalDate currentDate=LocalDate.now();
+        //String workDays= "N/A";
+        //String workShift= "N/A";
 
         Cashier newCashier = new Cashier(Integer.parseInt(idTextField.getText()),
                                         nameTextField.getText(),
                                         genderCB.getValue(),
                                         pwTextField.getText(),
                                         dobDatePicker.getValue());
-        //,
-        //                                salary,
-          //                              currentDate,
-            //                            workDays,
-              //                          workShift);
 
         c.add(newCashier);
+        System.out.println(c);
 
         File file = new File("cashier.bin");
         FileOutputStream fos;
