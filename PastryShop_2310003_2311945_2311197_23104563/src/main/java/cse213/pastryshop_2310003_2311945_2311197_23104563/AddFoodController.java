@@ -87,7 +87,7 @@ public class AddFoodController
 
 
     @javafx.fxml.FXML
-    public void AddFoodOnAction(ActionEvent actionEvent) {
+    public void AddFoodOnActdion(ActionEvent actionEvent) {
         //String id, String foodName, String foodType, LocalDate expiryDate, int stockAmount, float price
         Food newFood= new Food(foodIDTextField.getText(), foodNameTextField.getText(), foodTypeCB.getValue(), expDatePicker.getValue(), Integer.parseInt(stockAmountTextField.getText()), Float.parseFloat(priceTextField.getText()));
         foodList.add(newFood);

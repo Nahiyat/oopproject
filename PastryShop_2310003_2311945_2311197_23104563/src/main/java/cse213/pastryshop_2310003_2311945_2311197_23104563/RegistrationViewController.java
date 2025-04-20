@@ -1,7 +1,7 @@
 package cse213.pastryshop_2310003_2311945_2311197_23104563;
 
 
-import cse213.pastryshop_2310003_2311945_2311197_2310563.Cashier;
+import cse213.pastryshop_2310003_2311945_2311197_23104563.Cashier;
 import javafx.event.ActionEvent;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
@@ -10,8 +10,7 @@ import javafx.scene.control.TextField;
 import java.io.*;
 import java.util.ArrayList;
 
-public class RegistrationViewController
-{
+public class RegistrationViewController {
     @javafx.fxml.FXML
     private TextField pwTextField;
     @javafx.fxml.FXML
@@ -21,7 +20,7 @@ public class RegistrationViewController
     @javafx.fxml.FXML
     private DatePicker dobDatePicker;
 
-    ArrayList<cse213.pastryshop_2310003_2311945_2311197_2310563.Cashier> c;
+    ArrayList<cse213.pastryshop_2310003_2311945_2311197_23104563.Cashier> c;
 
 
     @javafx.fxml.FXML
@@ -29,8 +28,8 @@ public class RegistrationViewController
 
     @javafx.fxml.FXML
     public void initialize() {
-        c= new ArrayList<>();
-        genderCB.getItems().addAll("Male","Female");
+        c = new ArrayList<>();
+        genderCB.getItems().addAll("Male", "Female");
 
         File file;
         FileInputStream fis;
@@ -45,7 +44,7 @@ public class RegistrationViewController
 
             try {
                 while (true) {
-                    cse213.pastryshop_2310003_2311945_2311197_2310563.Cashier cashier = (cse213.pastryshop_2310003_2311945_2311197_2310563.Cashier) ois.readObject();
+                    cse213.pastryshop_2310003_2311945_2311197_23104563.Cashier cashier = (cse213.pastryshop_2310003_2311945_2311197_23104563.Cashier) ois.readObject();
                     c.add(cashier);
                 }
             } catch (EOFException eofException) {
@@ -72,8 +71,8 @@ public class RegistrationViewController
         //LocalDate currentDate=LocalDate.now();
         //String workDays= "N/A";
         //String workShift= "N/A";
-
-        cse213.pastryshop_2310003_2311945_2311197_2310563.Cashier newCashier = new Cashier(Integer.parseInt(idTextField.getText()),
+/*
+        Cashier newCashier = new Cashier(Integer.parseInt(idTextField.getText()),
                                         nameTextField.getText(),
                                         genderCB.getValue(),
                                         pwTextField.getText(),
@@ -106,5 +105,6 @@ public class RegistrationViewController
         //c.add(newCashier);
         //cashierList.add(new Cashier(Integer.parseInt(idTextField.getText()),nameTextField.getText(),genderCB.getValue(), pwTextField.getText(), dobDatePicker.getValue()));
         //System.out.println(c);
-
+*/
+    }
 }
