@@ -1,8 +1,9 @@
 package cse213.pastryshop_2310003_2311945_2311197_23104563;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class Food {
+public class Food implements Serializable {
     String id, foodName, foodType;
     LocalDate expiryDate;
     int stockAmount;
@@ -15,6 +16,10 @@ public class Food {
         this.expiryDate = expiryDate;
         this.stockAmount = stockAmount;
         this.price = price;
+    }
+
+    public Food() {
+
     }
 
     public String getId() {
