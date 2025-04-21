@@ -13,32 +13,32 @@ public class ProductManagerDashboardController
 
     @javafx.fxml.FXML
     public void restockOrdersOA(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("Shadman/U1weeklySales.fxml");
+        SceneSwitcher.switchTo("Shadman/U1restock.fxml");
     }
 
     @javafx.fxml.FXML
     public void returnDisputesOA(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("Shadman/U1weeklySales.fxml");
+        SceneSwitcher.switchTo("Shadman/U1return_dispute.fxml");
     }
 
     @javafx.fxml.FXML
     public void expiryCheckOA(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("Shadman/U1weeklySales.fxml");
+        SceneSwitcher.switchTo("Shadman/U1espiry.fxml");
     }
 
     @javafx.fxml.FXML
     public void pricingUpdateOA(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("Shadman/U1weeklySales.fxml");
+        SceneSwitcher.switchTo("Shadman/U1pricing_update.fxml");
     }
 
     @javafx.fxml.FXML
     public void seasonalLaunchOA(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("Shadman/U1weeklySales.fxml");
+        SceneSwitcher.switchTo("Shadman/U1seasonallaunge.fxml");
     }
 
     @javafx.fxml.FXML
     public void shipmentsOA(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("Shadman/U1.fxml");
+        SceneSwitcher.switchTo("Shadman/U1viewShipments.fxml");
     }
 
     @javafx.fxml.FXML
@@ -47,7 +47,7 @@ public class ProductManagerDashboardController
     }
 
     @javafx.fxml.FXML
-    public void weklySalesOA(ActionEvent actionEvent) throws IOException {
+    public void weeklySalesOA(ActionEvent actionEvent) throws IOException {
         SceneSwitcher.switchTo("Shadman/U1weeklySales.fxml");
     }
 

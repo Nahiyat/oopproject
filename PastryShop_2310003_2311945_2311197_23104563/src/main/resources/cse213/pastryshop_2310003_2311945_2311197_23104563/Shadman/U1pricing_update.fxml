@@ -1,0 +1,12 @@
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.Button?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="cse213.pastryshop_2310003_2311945_2311197_23104563.Shadman.PricingUpdateController" prefWidth="600" prefHeight="400">
+    <Label text="Product Pricing Update" layoutX="200" layoutY="10" style="-fx-font-size: 18;" />
+
+    <TableView fx:id="pricingTable" layoutX="50" layoutY="60" prefWidth="500" prefHeight="250"/>
+
+    <Button text="Confirm Price Update" layoutX="200" layoutY="330" onAction="#OAConfirmPricing"/>
+</AnchorPane>
+

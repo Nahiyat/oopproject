@@ -3,8 +3,8 @@ package cse213.pastryshop_2310003_2311945_2311197_23104563.Shadman;
 public class U1PriceUpdate {private int updateId;
     private int productId;
     private String productName;
-    private double oldPrice;
-    private double newPrice;
+    private float oldPrice;
+    private float newPrice;
 
     public int getUpdateId() {
         return updateId;
@@ -34,7 +34,7 @@ public class U1PriceUpdate {private int updateId;
         return oldPrice;
     }
 
-    public void setOldPrice(double oldPrice) {
+    public void setOldPrice(float oldPrice) {
         this.oldPrice = oldPrice;
     }
 
@@ -42,7 +42,7 @@ public class U1PriceUpdate {private int updateId;
         return newPrice;
     }
 
-    public void setNewPrice(double newPrice) {
+    public void setNewPrice(float newPrice) {
         this.newPrice = newPrice;
     }
 
@@ -57,7 +57,7 @@ public class U1PriceUpdate {private int updateId;
                 '}';
     }
 
-    public U1PriceUpdate(int updateId, int productId, String productName, double oldPrice, double newPrice) {
+    public U1PriceUpdate(int updateId, int productId, String productName, float oldPrice, float newPrice) {
         this.updateId = updateId;
         this.productId = productId;
         this.productName = productName;

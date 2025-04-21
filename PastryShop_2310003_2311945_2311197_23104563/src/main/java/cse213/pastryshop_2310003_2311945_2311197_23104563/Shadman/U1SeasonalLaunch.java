@@ -66,6 +66,6 @@ public class U1SeasonalLaunch { private int launchId;
                 '}';
     }
 
-    private String status; // "Planned", "In Production", "Launched"
+    private String status;
 
 }

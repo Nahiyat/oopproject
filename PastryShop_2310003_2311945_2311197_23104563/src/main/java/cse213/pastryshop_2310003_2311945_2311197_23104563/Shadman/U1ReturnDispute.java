@@ -6,7 +6,7 @@ public class U1ReturnDispute {private int disputeId;
     private int productId;
     private String productName;
     private LocalDate returnDate;
-    private String status; // "Pending", "Approved", "Rejected"
+    private String status;
     private String reason;
 
     public int getDisputeId() {
