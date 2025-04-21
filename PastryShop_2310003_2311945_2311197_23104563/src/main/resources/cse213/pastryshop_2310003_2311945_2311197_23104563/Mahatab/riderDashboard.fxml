@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.pastryshop_2310003_2311945_2311197_23104563.Mahatab.RiderDashboardController">
+   <children>
+      <Label layoutX="24.0" layoutY="165.0" text="ORDERS ARE SHOWN BELOW">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextArea layoutX="24.0" layoutY="194.0" prefHeight="200.0" prefWidth="324.0" />
+      <ComboBox fx:id="daysOfLeave" layoutX="433.0" layoutY="41.0" prefWidth="150.0" />
+      <Label layoutX="468.0" layoutY="14.0" text="Apply for leave" />
+      <Button layoutX="42.0" layoutY="217.0" mnemonicParsing="false" onAction="#proceedToXBtn" text="Order X" />
+      <Button layoutX="147.0" layoutY="218.0" mnemonicParsing="false" onAction="#markAsDeliveredBtn" text="Mark As delivered" />
+      <Button layoutX="14.0" layoutY="18.0" mnemonicParsing="false" onAction="#proceedToFeedbackBtn" text="See feedbacks" />
+      <Button fx:id="cancelAnOrderButton" layoutX="139.0" layoutY="18.0" mnemonicParsing="false" onAction="#cancelAnOrderBtn" text="Cancel an Order" />
+      <Button layoutX="262.0" layoutY="18.0" mnemonicParsing="false" onAction="#manageAccountBtn" text="Manage Account" />
+      <Button layoutX="15.0" layoutY="55.0" mnemonicParsing="false" onAction="#contactSupportBtn" text="Contact Support" />
+   </children>
+</AnchorPane>
