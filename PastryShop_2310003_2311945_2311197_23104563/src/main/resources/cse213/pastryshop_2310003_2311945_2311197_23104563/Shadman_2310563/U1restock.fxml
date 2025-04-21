@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="432.0" prefWidth="600" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="cse213.pastryshop_2310003_2311945_2311197_23104563.Shadman_2310563.RestockOrdersController">
+    <Label layoutX="180" layoutY="10" style="-fx-font-size: 18;" text="Urgent Product Restock Orders" />
+
+    <TableView fx:id="orderTable" layoutX="50" layoutY="60" prefHeight="250" prefWidth="500" />
+
+    <Button layoutX="100" layoutY="330" onAction="#OnActionButtonApprove" text="Approve Selected" />
+    <Button layoutX="250" layoutY="330" onAction="#OnActionButtonReject" text="Reject Selected" />
+
+    <TextField fx:id="rejectionReason" layoutX="50" layoutY="370" prefWidth="500" promptText="Enter rejection reason (min 20 characters)" />
+</AnchorPane>
