@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.pastryshop_2310003_2311945_2311197_23104563.CashierDashboardController">
+   <children>
+      <Button layoutX="139.0" layoutY="82.0" mnemonicParsing="false" onAction="#ProcessTransactionOnAction" text="Process Transaction" />
+      <Button layoutX="139.0" layoutY="123.0" mnemonicParsing="false" onAction="#ProcessRefundOnAction" text="Process Refund" />
+      <Button layoutX="139.0" layoutY="165.0" mnemonicParsing="false" onAction="#ShowDiscountOnAction" text="Show discount" />
+      <Button layoutX="139.0" layoutY="200.0" mnemonicParsing="false" onAction="#InformAboutDamagedGoodsOnAction" text="InformAboutDamagedGoods" />
+      <Button layoutX="360.0" layoutY="82.0" mnemonicParsing="false" onAction="#CashierHandleCakeOrderOnAction" text="Handling Cake Order" />
+      <Button layoutX="364.0" layoutY="123.0" mnemonicParsing="false" onAction="#ManageGiftCardOnAction" text="Managing Gift Card" />
+      <Button layoutX="364.0" layoutY="165.0" mnemonicParsing="false" onAction="#RecieveCustomerComplaintOnAction" text="Recieving Customer Complaint" />
+      <Button layoutX="364.0" layoutY="200.0" mnemonicParsing="false" text="Button" />
+   </children>
+</AnchorPane>

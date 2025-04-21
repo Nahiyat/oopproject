@@ -11,7 +11,7 @@ public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         SceneSwitcher.stage=stage;
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("loginView.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("cashierDashboard.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Pastry Shop Management....");
         stage.setScene(scene);

@@ -1,10 +1,14 @@
 package cse213.pastryshop_2310003_2311945_2311197_23104563;
 
+import cse213.pastryshop_2310003_2311945_2311197_23104563.Shadman.U1Product;
+
 import java.io.Serializable;
 import java.time.LocalDate;
 
-public class Food implements Serializable {
-    String id, foodName, foodType;
+public class Food extends U1Product implements Serializable {
+    String  foodType;
+    String id= Integer.toString(super.getProductId());
+    String foodName= super.getName();
     LocalDate expiryDate;
     int stockAmount;
     float price;
@@ -19,6 +23,7 @@ public class Food implements Serializable {
     }
 
     public Food() {
+        super();
 
     }
 

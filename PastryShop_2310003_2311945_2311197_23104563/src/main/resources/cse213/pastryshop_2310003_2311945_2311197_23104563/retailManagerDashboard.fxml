@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.pastryshop_2310003_2311945_2311197_23104563.RetailManagerDashboardController">
+   <children>
+      <Button layoutX="198.0" layoutY="112.0" mnemonicParsing="false" onAction="#BookeepingOnAction" text="Bookeeping" />
+      <Button layoutX="198.0" layoutY="160.0" mnemonicParsing="false" onAction="#PopularFoodOnAction" text="Popular Food" />
+      <Button layoutX="198.0" layoutY="200.0" mnemonicParsing="false" onAction="#SuperviseCashierOnAction" text="Supervise Cashier" />
+      <Button layoutX="198.0" layoutY="246.0" mnemonicParsing="false" onAction="#createScheduleOnAction" text="Create schedule" />
+      <Button layoutX="369.0" layoutY="112.0" mnemonicParsing="false" onAction="#UpdateFoodStockOnAction" text="Update Food Stock" />
+      <Button layoutX="369.0" layoutY="160.0" mnemonicParsing="false" onAction="#CreateBudgetOnAction" text="Create Budget" />
+      <Button layoutX="369.0" layoutY="200.0" mnemonicParsing="false" onAction="#InformFoodShortageOnAction" text="Inform Food Shortage" />
+      <Button layoutX="375.0" layoutY="246.0" mnemonicParsing="false" onAction="#createSalesReport" text="Create sales report" />
+      <Label layoutX="273.0" layoutY="28.0" text="Retail manager" />
+   </children>
+</AnchorPane>

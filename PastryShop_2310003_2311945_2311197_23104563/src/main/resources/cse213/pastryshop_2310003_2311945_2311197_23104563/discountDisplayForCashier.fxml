@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="412.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.pastryshop_2310003_2311945_2311197_23104563.DiscountDisplayForCashier">
+   <children>
+      <TableView fx:id="foodTableView" layoutX="83.0" layoutY="116.0" prefHeight="200.0" prefWidth="491.0">
+        <columns>
+          <TableColumn fx:id="foodNameCol" prefWidth="106.0" text="Food Name" />
+          <TableColumn fx:id="foodIdCol" prefWidth="74.0" text="Food Id" />
+            <TableColumn fx:id="discountTypeCol" prefWidth="103.0" text="Discount Type" />
+            <TableColumn fx:id="startDateCol" prefWidth="103.0" text="Offer Start Date" />
+            <TableColumn fx:id="endDateCol" prefWidth="104.0" text="Offer End Date" />
+        </columns>
+      </TableView>
+      <Button layoutX="494.0" layoutY="14.0" mnemonicParsing="false" onAction="#ReturnToDashboardOnAction" text="Return to Dashboard" />
+   </children>
+</AnchorPane>
