@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="cse213.pastryshop_2310003_2311945_2311197_23104563.Mahatab.CustomerSupportController">
+    <children>
+        <VBox spacing="10.0" alignment="CENTER" AnchorPane.topAnchor="20" AnchorPane.leftAnchor="20" AnchorPane.rightAnchor="20">
+            <padding>
+                <Insets top="20" bottom="20" left="20" right="20"/>
+            </padding>
+
+            <Label text="Customer Support" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+
+            <TextField fx:id="complaintTextField" promptText="Enter your complaint here" prefWidth="300"/>
+
+            <HBox spacing="15" alignment="CENTER">
+                <Button text="Report Complaint" onAction="#reportComplaint"/>
+                <Button text="Back" onAction="#goBack"/>
+            </HBox>
+        </VBox>
+    </children>
+</AnchorPane>

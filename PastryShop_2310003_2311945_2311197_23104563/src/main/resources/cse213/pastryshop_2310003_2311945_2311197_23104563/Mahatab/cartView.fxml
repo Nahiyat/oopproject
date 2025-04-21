@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.pastryshop_2310003_2311945_2311197_23104563.Mahatab.cartController">
+   <children>
+      <TextArea fx:id="cartTextArea" layoutX="11.0" layoutY="103.0" prefHeight="194.0" prefWidth="575.0" />
+      <Label layoutX="231.0" layoutY="63.0" prefHeight="29.0" prefWidth="108.0" text="Your Cart">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="326.0" layoutY="323.0" mnemonicParsing="false" onAction="#checkOutBtn" text="Confirm Order" />
+      <Button layoutX="216.0" layoutY="323.0" mnemonicParsing="false" onAction="#goBackBt" text="Go Back" />
+      <TextField layoutX="20.0" layoutY="336.0" prefHeight="42.0" prefWidth="160.0" />
+      <Label layoutX="40.0" layoutY="306.0" text="Address Details" />
+   </children>
+</AnchorPane>
